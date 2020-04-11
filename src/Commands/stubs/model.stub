@@ -2,7 +2,7 @@
 
 namespace {{ namespace }};
 
-use MuCTS\Helpers\Models\Model;
+use MuCTS\LaravelEloquentMulti\Models\Model;
 
 class {{ class }} extends Model
 {
