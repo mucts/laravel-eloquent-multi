@@ -1,0 +1,35 @@
+{
+    "name": "mucts/laravel-eloquent-multi",
+    "description": "Laravel Eloquent For Multi Query",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "ext-bcmath": "^7.2",
+        "ext-json": "^7.2",
+        "ext-openssl": "^7.2",
+        "laravel/framework": "^7.0",
+        "grimzy/laravel-mysql-spatial": "^2.1",
+        "mucts/helpers": "^0.1.5"
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.6",
+        "phpunit/phpunit": "^9.0"
+    },
+    "authors": [
+        {
+            "name": "herry",
+            "email": "yuandeng@aliyun.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MuCTS\\LaravelEloquentMulti\\": "src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
