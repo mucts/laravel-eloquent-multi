@@ -4,6 +4,8 @@
 namespace MuCTS\LaravelEloquentMulti\Models;
 
 
+use Illuminate\Database\Query\Builder;
+
 trait Multi
 {
     /** @var bool is multi table */
@@ -11,11 +13,19 @@ trait Multi
     /** @var null|string multi table name */
     protected $multiTable = null;
 
+    /**
+     * @param string|int|null $multiStr
+     * @return Builder
+     */
     public static function multiQuery($multiStr = null)
     {
         return (new static())->setMultiTable($multiStr)->newQuery();
     }
 
+    /**
+     * @param null $str
+     * @return $this
+     */
     public function setMultiTable($str = null)
     {
         $code = is_null($str) ?? (is_int($str) ? $str : hashcode($str));
@@ -25,6 +35,9 @@ trait Multi
         return $this;
     }
 
+    /**
+     * @return string|null
+     */
     public function getMultiTable()
     {
         return $this->multiTable ?: static::setMultiTable()->multiTable;
