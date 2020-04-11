@@ -2,8 +2,13 @@
 
 namespace {{ namespace }};
 
+use Illuminate\Database\Eloquent\Builder;
 use MuCTS\LaravelEloquentMulti\Models\Model;
 
+/**
+ * {{ class }} Model
+ * @method static Builder|{{ class }} multiQuery($value)
+ */
 class {{ class }} extends Model
 {
     protected $isMulti = true;

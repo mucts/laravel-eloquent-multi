@@ -7,15 +7,9 @@ namespace MuCTS\LaravelEloquentMulti\Models;
 use Grimzy\LaravelMysqlSpatial\Types\LineString;
 use Grimzy\LaravelMysqlSpatial\Types\Point;
 use Grimzy\LaravelMysqlSpatial\Types\Polygon;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use MuCTS\LaravelEloquentMulti\Concerns\MultiHasRelationships;
 
-/**
- * Class Model
- * @method static Builder multiQuery($multiStr = null)
- * @package MuCTS\LaravelEloquentMulti\Models
- */
 class Model extends EloquentModel
 {
     use Multi, MultiHasRelationships;
