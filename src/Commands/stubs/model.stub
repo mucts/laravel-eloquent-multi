@@ -7,7 +7,7 @@ use MuCTS\LaravelEloquentMulti\Models\Model;
 
 /**
  * {{ class }} Model
- * @method static Builder|{{ class }} multiQuery($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\ {{ namespace }}\{{ class }} multiQuery($value)
  */
 class {{ class }} extends Model
 {

@@ -14,24 +14,24 @@ trait Multi
     protected $multiTable = null;
 
     /**
-     * @param string|int|null $multiStr
+     * @param string|int|null $value
      * @return Builder
      */
-    public static function multiQuery($multiStr = null)
+    public static function multiQuery($value = null)
     {
-        return (new static())->setMultiTable($multiStr)->newQuery();
+        return (new static())->setMultiTable($value)->newQuery();
     }
 
     /**
-     * @param null $str
+     * @param null $value
      * @return $this
      */
-    public function setMultiTable($str = null)
+    public function setMultiTable($value = null)
     {
-        $code = is_null($str) ?? (is_int($str) ? $str : hashcode($str));
+        $code = is_null($value) ?? (is_int($value) ? $value : hashcode($value));
         $tables = static::getConnectionName() ?? 'default';
         $tables = config('database.connections.' . $tables . '.tables');
-        $this->multiTable = parent::getTable() . '_' . (1 + $code % $tables);
+        $this->multiTable = preg_replace('/_\d+$/', '', parent::getTable()) . '_' . (1 + $code % $tables);
         return $this;
     }
 
