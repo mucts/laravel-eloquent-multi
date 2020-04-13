@@ -5,11 +5,12 @@
     "require": {
         "php": "^7.2",
         "ext-bcmath": "^7.2",
+        "ext-gmp": "^7.2",
         "ext-json": "^7.2",
         "ext-openssl": "^7.2",
         "laravel/framework": "^7.0",
         "grimzy/laravel-mysql-spatial": "^2.1",
-        "mucts/helpers": "^0.1.5"
+        "mucts/helpers": "^0.1.5",
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
