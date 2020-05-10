@@ -24,13 +24,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "MuCTS\\LaravelEloquentMulti\\": "src/"
-        }
-    },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://mirrors.aliyun.com/composer/"
+            "MuCTS\\Laravel\\EloquentMulti\\": "src/"
         }
     }
 }

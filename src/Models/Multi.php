@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MuCTS\LaravelEloquentMulti\Models;
+namespace MuCTS\Laravel\EloquentMulti\Models;
 
 
 use Illuminate\Database\Query\Builder;

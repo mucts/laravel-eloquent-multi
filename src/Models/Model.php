@@ -1,14 +1,14 @@
 <?php
 
 
-namespace MuCTS\LaravelEloquentMulti\Models;
+namespace MuCTS\Laravel\EloquentMulti\Models;
 
 
 use Grimzy\LaravelMysqlSpatial\Types\LineString;
 use Grimzy\LaravelMysqlSpatial\Types\Point;
 use Grimzy\LaravelMysqlSpatial\Types\Polygon;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
-use MuCTS\LaravelEloquentMulti\Concerns\MultiHasRelationships;
+use MuCTS\Laravel\EloquentMulti\Concerns\MultiHasRelationships;
 
 class Model extends EloquentModel
 {

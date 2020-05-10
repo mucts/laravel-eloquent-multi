@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MuCTS\LaravelEloquentMulti\Commands;
+namespace MuCTS\Laravel\EloquentMulti\Commands;
 
 use Illuminate\Foundation\Console\ModelMakeCommand as ConsoleModelMakeCommand;
 

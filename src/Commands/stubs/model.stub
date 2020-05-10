@@ -3,11 +3,11 @@
 namespace {{ namespace }};
 
 use Illuminate\Database\Eloquent\Builder;
-use MuCTS\LaravelEloquentMulti\Models\Model;
+use MuCTS\Laravel\EloquentMulti\Models\Model;
 
 /**
  * {{ class }} Model
- * @method static \Illuminate\Database\Eloquent\Builder|\ {{ namespace }}\{{ class }} multiQuery($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\{{ namespace }}\{{ class }} multiQuery($value)
  */
 class {{ class }} extends Model
 {

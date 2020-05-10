@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MuCTS\LaravelEloquentMulti;
+namespace MuCTS\Laravel\EloquentMulti;
 
 use Exception;
 

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace MuCTS\LaravelEloquentMulti;
+namespace MuCTS\Laravel\EloquentMulti;
 
 
 use Illuminate\Support\ServiceProvider;
-use MuCTS\LaravelEloquentMulti\Commands\ModelMakeCommand;
+use MuCTS\Laravel\EloquentMulti\Commands\ModelMakeCommand;
 
 class LaravelEloquentMultiServiceProvider extends ServiceProvider
 {
