@@ -1,13 +1,13 @@
 <?php
 
 
-namespace MuCTS\Laravel\EloquentMulti;
+namespace MuCTS\Laravel\EloquentMulti\Providers;
 
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as Providers;
 use MuCTS\Laravel\EloquentMulti\Commands\ModelMakeCommand;
 
-class LaravelEloquentMultiServiceProvider extends ServiceProvider
+class ServiceProvider extends Providers
 {
     public function boot()
     {
