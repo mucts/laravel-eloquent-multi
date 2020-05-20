@@ -3,18 +3,18 @@
     "description": "Laravel Eloquent For Multi Query",
     "type": "library",
     "require": {
-        "php": "^7.2",
-        "ext-bcmath": "^7.2",
-        "ext-gmp": "^7.2",
-        "ext-json": "^7.2",
-        "ext-openssl": "^7.2",
+        "php": ">=7.2",
+        "ext-bcmath": "*",
+        "ext-gmp": "*",
+        "ext-json": "*",
+        "ext-openssl": "*",
         "laravel/framework": "^7.0",
         "grimzy/laravel-mysql-spatial": "^2.1",
-        "mucts/helpers": "^0.1.5"
+        "mucts/helpers": "^1.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^8.0|^9.0"
     },
     "authors": [
         {
